@@ -1,0 +1,19 @@
+# Go
+cli/womm
+cli/womm.exe
+
+# Node
+womm-gui/node_modules/
+womm-gui/.next/
+womm-gui/out/
+
+# Rust / Tauri
+womm-gui/src-tauri/target/
+
+# Env
+womm-gui/.env.local
+womm-gui/.env.*.local
+
+# IDE
+.vscode/
+.idea/
