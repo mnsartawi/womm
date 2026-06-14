@@ -1,0 +1,33 @@
+dependencies:
+  node:
+    version: ">=18.0"
+    brew: node@18
+    apt: nodejs
+    choco: nodejs-lts
+
+  git:
+    version: ">=2.30"
+
+  docker:
+    version: ">=20.10"
+    brew: --cask docker
+    choco: docker-desktop
+    winget: Docker.DockerDesktop
+
+env:
+  API_URL: http://localhost:3000
+  MONGO_URI: mongodb://localhost:27017/app
+
+files:
+  - .env
+  - config.json
+
+commands:
+  setup:
+    - npm install
+    - npm run build
+
+platforms:
+  windows: true
+  linux: true
+  macos: true
