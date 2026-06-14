@@ -1,6 +1,7 @@
-<picture>
-  <img src="public/womm.png" alt="womm" width="120" />
-</picture>
+<p align="center">
+  <img src="public/womm.png" alt="womm" width="120" style="border-radius: 50%;" />
+</p>
+
 
 # Works on my machine — Tauri + Next.js
 
