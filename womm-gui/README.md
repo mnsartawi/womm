@@ -1,6 +1,10 @@
 <p align="center">
-  <img src="public/womm.png" alt="womm" width="120" style="border-radius: 50%;" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public/womm-round.png">
+    <img src="public/womm-round.png" alt="womm" width="250" />
+  </picture>
 </p>
+
 
 
 # Works on my machine — Tauri + Next.js
