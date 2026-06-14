@@ -1,21 +1,33 @@
-# Next.js template
+<picture>
+  <img src="public/womm.png" alt="womm" width="120" />
+</picture>
 
-This is a Next.js template with shadcn/ui.
+# Works on my machine — Tauri + Next.js
 
-## Adding components
+GUI companion for the [womm CLI](https://github.com/mnsartawi/womm). Makes it easier to generate, edit, and validate `.womm` config files without leaving a visual interface.
 
-To add components to your app, run the following command:
+## Prerequisites
+
+- [womm CLI](https://github.com/mnsartawi/womm) installed on your system
+- Node.js 18+
+- Rust toolchain (for Tauri)
+
+## Getting started
 
 ```bash
-npx shadcn@latest add button
+npm install
+npm run tauri dev
 ```
 
-This will place the ui components in the `components` directory.
+## Build
 
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button";
+```bash
+npm run tauri build
 ```
+
+## Features
+
+- Generate starter `.womm` files
+- Validate environment against a `.womm` config
+- Edit config files inline
+- Runs the CLI under the hood — same checks, nicer output
